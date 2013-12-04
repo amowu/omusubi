@@ -2,7 +2,7 @@ execute "apt-get" do
   command "apt-get update"
 end
 
-packages = %w{git nginx php5 php5-mysql php5-pgsql php5-curl php5-mcrypt php5-cli php5-fpm php-pear curl imagemagick php5-imagick php5-memcache}
+packages = %w{git nginx php5 php5-mysql php5-pgsql php5-curl php5-mcrypt php5-cli php5-fpm php-pear curl imagemagick php5-imagick php5-memcached}
 
 packages.each do |pkg|
   package pkg do
